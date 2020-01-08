@@ -9,10 +9,12 @@ use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Markdown;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Dewsign\NovaRepeaterBlocks\Traits\IsRepeaterBlockResource;
+use Dewsign\NovaRepeaterBlocks\Traits\ResourceCanBeContainerised;
 
 class Blockquote extends Resource
 {
     use IsRepeaterBlockResource;
+    use ResourceCanBeContainerised;
 
     /**
      * The model the resource corresponds to.
